@@ -1,0 +1,13 @@
+
+"start": "unset LEGACY_BACKEND_START;unset NODE_OPTIONS;backstage-cli package start",
+~44-46 seconds
+
+"start": "unset LEGACY_BACKEND_START;export NODE_OPTIONS=--max_old_space_size=6144;backstage-cli package start",
+~11-13 seconds
+50 seconds cold start
+
+"start": "export LEGACY_BACKEND_START=true;unset NODE_OPTIONS;backstage-cli package start",
+~9-11 seconds
+
+
+
